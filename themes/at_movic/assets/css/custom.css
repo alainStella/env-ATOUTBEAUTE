@@ -1,0 +1,651 @@
+/*
+ * Custom code goes here.
+ * A template should always ship with an empty custom.css
+ */
+
+
+ .header__header{
+    height: 70vh;
+    position: relative;
+    overflow: hidden;
+    background-color: #F6F6F6;
+}
+.header__header h1{
+    font-size: 190px;
+    font-weight: 500;
+    margin-top: 30px;
+    text-transform: uppercase;
+    color: rgba(202, 216, 217, 1);
+    text-align: center;
+}
+.header__header img{
+    position: absolute;
+    left: 32%;
+    width: 31%;
+    bottom: -80px;
+}
+
+.header__text{
+    width: 100%;
+    margin: auto;
+    padding: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+.header__header .desc{
+    font-size: 25px;
+    text-align: right;
+    font-family: "Poppins";
+    margin-right:250px;
+}
+.header__header  p{
+    margin-bottom: 20px;
+    font-size: 35px;
+    color: black;
+}
+.header__header h2{
+    font-weight: 600;
+    font-size: 50px;
+}
+.header__btn{
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+}
+.header__btn button{
+    position: relative;
+    padding: 1em 1.5em;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    font-size: 18px;
+    margin: 1em 0.8em;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+        .button.type3 {
+            color: black;
+        }
+        .button.type3.type3::after, .button.type3.type3::before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 20%;
+            height: 20%;
+            border: 3px solid;
+            transition: all 0.4s ease;
+            border-radius: 2px;
+        }
+        .button.type3.type3::after {
+            bottom: 0;
+            right: 0;
+            border-top-color: transparent;
+            border-left-color: transparent;
+            border-bottom-color: #435a6b;
+            border-right-color: #435a6b;
+        }
+        .button.type3.type3::before {
+            top: 0;
+            left: 0;
+            border-bottom-color: transparent;
+            border-right-color: transparent;
+            border-top-color: #435a6b;
+            border-left-color: #435a6b;
+        }
+        .button.type3.type3:hover:after, .button.type3.type3:hover:before {
+            border-bottom-color: #435a6b;
+            border-right-color: #435a6b;
+            border-top-color: #435a6b;
+            border-left-color: #435a6b;
+            width: 100%;
+            height: 100%;
+        }
+.header__btn a{
+    margin-top: 20px;
+    text-align: right;
+    color: gray;
+}
+.header__overlay{
+    position: absolute;
+    width: 20%;
+    right: 20%;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    padding: 10px;
+    text-align: justify;
+    transition: 0.4s;
+}
+#lebutton:hover ~ #header-overlay{
+    bottom: 500px;
+    color: #F4841A;
+}
+ 
+
+
+
+
+
+/* PRODUIT */
+.section__produit{
+    display: flex;
+    width: 100%;
+    
+}
+.produit{
+    width: 333%;
+    height: 32vh;
+    transition:0.3s
+
+}
+
+
+
+.produit__text{
+    color: white;
+    margin: auto;
+    padding: 5px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.produit__text h2{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 38px;
+    padding: 5px;
+    text-align: center;
+    line-height: 0.8;
+    color: white;
+
+}
+/* .produit__text h2:nth-child(2n){
+    text-transform: uppercase;
+    font-weight: 900;
+} */
+.produit1{
+    background-image: 
+    linear-gradient(
+        rgba(0, 76, 86, 0.1),
+        rgba(0, 76, 86, 0.37)
+    ),
+    url(../img/bk-pierre.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition:0.3s
+
+}
+
+.produit1:hover{
+    background-image: 
+    linear-gradient(
+        rgba(0, 76, 86, 0.37),
+        rgba(0, 76, 86, 0.37)
+    ),
+    url(../img/bk-pierre.jpg) ;
+
+}
+
+.produit2{
+    background-image: 
+    linear-gradient(
+        rgba(0, 76, 86, 0.1),
+        rgba(0, 76, 86, 0.37)
+    ),
+    url(../img/bk-bougie.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition:0.3s
+
+}
+
+.produit2:hover{
+    background-image: 
+    linear-gradient(
+        rgba(0, 76, 86, 0.37),
+        rgba(0, 76, 86, 0.37)
+    ),
+    url(../img/bk-bougie.jpg);
+}
+
+.produit3{
+    background-image: 
+    linear-gradient(
+        rgba(0, 76, 86, 0.1),
+        rgba(0, 76, 86, 0.37)
+    ),
+    url(../img/bk-maquillage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    transition:0.3s
+
+}
+
+.produit3:hover{
+    background-image: 
+    linear-gradient(
+        rgba(0, 76, 86, 0.37),
+        rgba(0, 76, 86, 0.37)
+    ),
+    url(../img/bk-maquillage.jpg);
+}
+
+
+
+
+/* COLLECTion */
+.coll__haut{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.coll__haut .haut__text{
+    width: 30%;
+    text-align: center;
+}
+.haut__text{
+    font-size: 30px;
+    margin: 50px;
+    font-family: "Old Standard TT";
+    text-transform: uppercase;
+}
+.haut__text p{
+    font-size: 40px;
+    letter-spacing: 15px;
+    color: black;
+}
+.haut__text h2{
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.haut__card{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.caard{
+    height: 130px;
+    border-radius: 9px;
+    margin: 5px;
+    transition: 0.3s;
+}
+.caard1:hover{
+    transform: translateX(-15px);
+}
+.caard3:hover{
+    transform: translateX(-15px);
+}
+.caard6:hover{
+    transform: translateX(-15px);
+}
+.caard2:hover{
+    transform: translateX(15px);
+}
+.caard4:hover{
+    transform: translateX(15px);
+}
+.caard5:hover{
+    transform: translateX(15px);
+}
+.coll__cate{
+    margin: 15px;
+    font-size: 12px;
+    color: white;
+}
+.caard h3{
+    color: white;
+}
+.caard h3:first-child{
+    text-transform: uppercase;
+}
+.caard1{
+    width: 60%;
+    background-image:url(../img/bijouxacier-so.jpg);
+}
+.caard2{
+    width: 30%;
+    background-image: url(../img/oiseaux.jpg);
+}
+.caard3{
+    width: 45%;
+    background-image: url(../img/ideescadeaux5.jpg);
+
+}
+.caard4{
+    width: 45%;
+    background-image: url(../img/cheveux-so2.jpg);
+}
+.caard5{
+    width: 60%;
+    background-image: url(../img/madeinfrance.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.caard6{
+    width: 30%;
+    background-image: url(../img/zodiac.jpg);
+    background-position: right;
+}
+
+.coll__bas{
+    display: flex;
+    position: relative;
+    margin-top: 50px;
+}
+.bas__img{
+    width: 50%;
+    height: 500px;
+    background-color: #B9D7DB;
+    margin-top: 150px;
+    pointer-events: none;
+}
+.bas__img img{
+    position: absolute;
+    bottom:0;
+    left: 7%;
+    width: 40%;
+    transition: opacity 0.5s;
+    pointer-events: none;
+}
+.bas__img .fille2{
+    width: 36%;
+}
+.bas__img .fille2{
+    opacity: 0;
+}
+.bas__img:hover .fille2{
+    opacity: 1;
+}
+.bas__img:hover .fille1{
+    opacity: 0;
+}
+.coll__titre{
+    position: absolute;
+    width: 12%;
+    text-align: right;
+    top: 45%;
+    left: 43%;
+    font-family: "Old Standard TT";
+}
+.coll__titre h2{
+    font-size: 40px;
+
+}
+.bas__text{
+    width: 25%;
+    margin-left: 15%;
+    margin-top: 70px;
+}
+.bas__text p{
+    font-size: 23px;
+    text-align: justify;
+    color: black;
+}
+.bas__btn{
+    margin-top: 10%;
+    padding: 20px;
+    background-color: black;
+    border-radius: 7px;
+    width: 40%;
+    text-align: center;
+    transition: 0.3s;
+}
+.bas__btn:hover{
+    transform: translateY(-15px);
+}
+.bas__btn a{
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+}
+.tbcmssingle-block{
+    display: none;
+}
+.tb-newsletter-app-wrapper{
+    background: rgb(185,215,219);
+    background: linear-gradient(180deg, rgba(185,215,219,1) 0%, rgba(185,215,219,0.6474790599833684) 100%);
+}
+.tbnewsleteer-btn-wrapper .btn-primary[type="submit"]{
+    border: 2px solid black ;
+    color: black ;
+}
+
+.tbcms-main-title .tbmain-title h2{
+    font-size: 30px;
+}
+.tbtab-title-wrapper .tbtabs-products li span{
+    font-size: 15px;
+}
+.tbproduct-wrapper:hover .tbproduct-name .product-title a h6, .tbsearch-dropdown-title:hover, .product-title a:hover h6{
+    color: black;
+}
+
+
+/* RESPONSIVE TABLETTE */
+
+@media (max-width: 991.98px) { 
+    .header__header{
+        height: 35vh;
+
+    }
+    .header__text{
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 5%;
+    }
+    .header__header h1{
+        font-size: 90px;
+    }
+    .header__text p{
+        font-size: 20px;
+    }
+    .header__text h2{
+        font-size: 25px;
+    }
+    .header__header img{
+        width: 37%;
+        bottom: 0;
+    }
+    .header__btn a{
+        text-align: center;
+    }
+    .produit{
+        height:20vh ;
+    }
+    .produit__text h2{
+        font-size:22px;
+    }
+    .coll__haut .haut__text{
+        margin: 20px;
+        width: 100%;
+        text-align: center;
+    }
+    .haut__text p{
+        font-size:20px ;
+    }
+    .haut__text h2{
+        font-size: 30px;
+    }
+    .haut__card{
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+    }
+    .coll__haut{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .coll__cate h3{
+    font-size: 17px;
+    }
+    .coll__bas{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .bas__img{
+        margin-top: 20px;
+        height: 270px;
+    }
+    .bas__img img{
+        left: 10px;
+    }
+    .bas__text{
+        width: 45%;
+        margin-left: 50px;
+        margin-top: 20px;
+        margin-right: 10px;
+    }
+    .bas__text p{
+        font-size: 12px;
+    }
+    .coll__titre{
+        left: 32%;
+        top: 25%;
+    }
+    .coll__titre h2{
+        font-size: 19px;
+    }
+ }
+
+
+ /* RESPONSIVE MOBILE  */
+ @media (max-width: 480px){
+     .header__header{
+         height: 65vh;
+     }
+    .header__header h1{
+         display: none;
+     }
+     .header__text{
+         display: flex;
+         justify-content: center;
+         flex-direction: column;
+         margin: 0;
+     }
+     .header__text .desc{
+        text-align: center;
+     }
+
+     .header__header .desc{
+        font-size: 35px;
+        text-align: right;
+        font-family: "Poppins";
+        margin-right:0px;
+    }
+
+    .header__header img{
+        width: 71%;
+        left: 60px;
+    }
+    .header__btn{
+        margin: 0;
+    }
+    .button.type3{
+        margin: 5px;
+    }
+    .header__btn .le__a{
+        display: none;
+    }
+    .section__produit{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .collection{
+        width: 98%;
+        margin: auto;
+    }
+    .produit{
+        height: 260px;
+    }
+    .caard1{
+        background-position: right;
+    }
+    .caard2{
+        background-position: bottom;
+    }
+    .caard3{
+        background-position: center;
+    }
+    .caard4{
+        background-position: right;
+    }
+    .caard5{
+        background-position: center;
+    }
+    .caard6{
+        background-position: right;
+    }
+    .coll__bas{
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+    .bas__img{
+        width: 85%;
+        position: relative;
+    } 
+    .bas__img img{
+        position: absolute;
+        width: 93%;
+    }
+    .coll__titre{
+        width: 35%;
+        left: 80%;
+        text-align: right;
+    }
+    .bas__text{
+        width: 90%;
+        margin: auto;
+        margin-top: 15px;
+    }
+    .bas__btn{
+        margin: auto;
+    }
+    .bas__img{
+        pointer-events: none;
+    }
+}
+
+/* REASSURANCE */
+.rea{
+    margin:3px 200px ;
+    display: flex;
+    justify-content: space-around;
+
+}
+.bloc__rea{
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+.bloc__rea i{
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.box-navads{
+    display: none;
+}
+.box-top .col-info .wislish-button .ap-btn-wishlist .ap-total{
+    background: #AED6F1;
+}
+
+.product-add-to-cart .product-quantity .add-to-cart .btn{
+    background: #AED6F1;
+}
+.add-to-cart{
+    background: #AED6F1;
+
+}
